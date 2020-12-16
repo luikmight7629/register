@@ -12,8 +12,8 @@ if (document.getElementById('lname').value == "") {
 if (document.getElementById('cn').value == "") {
 	errormessager+="Please Enter contact number \n";
 }
-if (document.getElementById('cn').value.length <10) {
-	errormessager+="Enter 11 numbers \n";
+if (document.getElementById('cn').value.length <=10 && document.getElementById('cn').value.length >=12) {
+	errormessager+="EnterContact Number with 11 digits \n";
 }
 if (document.getElementById('ea').value =="") {
 	errormessager+="Enter email Address \n";
