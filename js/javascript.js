@@ -12,7 +12,7 @@ if (document.getElementById('lname').value == "") {
 if (document.getElementById('cn').value == "") {
 	errormessager+="Please Enter contact number \n";
 }
-if (document.getElementById('cn').value <=10) {
+if (document.getElementById('cn').value.length <10) {
 	errormessager+="Enter 11 numbers \n";
 }
 if (document.getElementById('ea').value =="") {
@@ -24,14 +24,11 @@ if (document.getElementById('user').value =="") {
 if (document.getElementById('pass').value =="") {
 	errormessager+="Enter password \n";
 }
-if (document.getElementById('pass').value <=4) {
-	errormessager+="Enter atleast 5 \n";
-}
-if (document.getElementById('Cpass').value =="") {
-	errormessager+="Enter Confirm passwork \n";
+if (document.getElementById('pass').value.length <5) {
+	errormessager+="Password must be greater than 5 \n";
 }
 if (document.getElementById('pass').value !=document.getElementById('Cpass').value) {
-	errormessager+="atleast havethe same password \n";
+	errormessager+="atleast have the same password \n";
 }
 
 if (errormessager != "") {
