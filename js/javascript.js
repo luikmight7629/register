@@ -13,19 +13,19 @@ if (document.getElementById('cn').value == "") {
 	errormessager+="Please Enter contact number \n";
 }
 if (document.getElementById('cn').value.length <=10 && document.getElementById('cn').value.length >=12) {
-	errormessager+="EnterContact Number with 11 digits \n";
+	errormessager+="Please EnterContact Number with 11 digits \n";
 }
 if (document.getElementById('ea').value =="") {
-	errormessager+="Enter email Address \n";
+	errormessager+="Please Enter email Address \n";
 }
 if (document.getElementById('user').value =="") {
-	errormessager+="Enter User Name \n";
+	errormessager+="Please Enter User Name \n";
 }
 if (document.getElementById('pass').value =="") {
-	errormessager+="Enter password \n";
+	errormessager+=" Please Enter password \n";
 }
 if (document.getElementById('pass').value.length <5) {
-	errormessager+="Password must be greater than 5 \n";
+	errormessager+="Please Password must be greater than 5 \n";
 }
 if (document.getElementById('pass').value !=document.getElementById('Cpass').value) {
 	errormessager+="atleast have the same password \n";
