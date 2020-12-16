@@ -10,20 +10,26 @@
 	<style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
 	body{background: #ADD8E6;
 	font-family: 'Goldman', cursive;}
-.cl-bg {background-color: #2f4f4f;}
+.cl-bg {background-color: #2f4f4f;	position: absolute;
+	top: 50%;
+	left: 50%; 
+	transform: translateX(-50%) translateY(-50%);}
 input[type="number"]input[type="text"],input[type="email"],input[type="password"]{width: 100px; border-radius: 20%;}
-input[type="submit"]{width: 300px;}p{padding-top: 2rem;}</style>
+input[type="submit"]{width: 300px;}p{padding-top: 2rem;}
+.text-right{text-align: right;} .text-left{text-align: left;}
+
+</style>
 </head>
 <body>
-<div class="container border text-center cl-bg p-5 text-light">
+<div class="container border text-center cl-bg p-5 text-light rounded-bottom">
 
 	<form method="post" action="index2.html" onsubmit="return checkblank()">
 
 	<div class="row">
-	<div class="col-6">
+	<div class="col-6 text-right">
 	<label>First Name
 	</div>
-	<div class="col-6">
+	<div class="col-6 text-left">
 	<input type="text" name="fname" id="fname"></label>
 	</div>
 	</div>
@@ -32,7 +38,7 @@ input[type="submit"]{width: 300px;}p{padding-top: 2rem;}</style>
 	<div class="col-6 text-right">
 	<label>Middle Name
 	</div>
-	<div class="col-6">
+	<div class="col-6 text-left">
 	<input type="text" name="mname" id="mname"></label>
 	</div>
 	</div>
@@ -41,7 +47,7 @@ input[type="submit"]{width: 300px;}p{padding-top: 2rem;}</style>
 	<div class="col-6 text-right">
 	<label>Last Name
 	</div>
-	<div class="col-6">
+	<div class="col-6 text-left">
 	<input type="text" name="lname" id="lname"></label>  
 	</div>
 	</div>
@@ -50,7 +56,7 @@ input[type="submit"]{width: 300px;}p{padding-top: 2rem;}</style>
 	<div class="col-6 text-right">
 	<label>Contact Number
 	</div>
-	<div class="col-6">
+	<div class="col-6 text-left">
 	<input type="Number" name="cn" id="cn"></label>
 	</div>
 	</div>
@@ -59,7 +65,7 @@ input[type="submit"]{width: 300px;}p{padding-top: 2rem;}</style>
 	<div class="col-6 text-right">
 	<label>Email Address
 	</div>
-	<div class="col-6">
+	<div class="col-6 text-left">
 	<input type="email" name="ea" id="ea"></label>
 	</div>
 	</div>
@@ -68,7 +74,7 @@ input[type="submit"]{width: 300px;}p{padding-top: 2rem;}</style>
 	<div class="col-6 text-right">
 	<label>User Name
 	</div>
-	<div class="col-6">
+	<div class="col-6 text-left">
 	<input type="text" name="cn" id="user"></label>
 	</div>
 	</div>
@@ -77,7 +83,7 @@ input[type="submit"]{width: 300px;}p{padding-top: 2rem;}</style>
 	<div class="col-6 text-right">
 	<label>Password
 	</div>
-	<div class="col-6">
+	<div class="col-6 text-left">
 	<input type="password" name="password" id="pass"></label>
 	</div>
 	</div>
@@ -86,14 +92,14 @@ input[type="submit"]{width: 300px;}p{padding-top: 2rem;}</style>
 	<div class="col-6 text-right">
 	<label>Confirm Password
 	</div>
-	<div class="col-6">
+	<div class="col-6 text-left">
 	<input type="password" name="password" id="Cpass"></label>
 	</div>
 	</div>
 
 	<div class="row">
-	<div class="col-6 text-right">
-	<input type="submit" value="Register" class="btn btn-light">
+	<div class="col-12 pt-1 ">
+	<input type="submit" value="Register" class="btn btn-lg btn-outline-dark btn-light">
 	</div>
 	</div>
 	
