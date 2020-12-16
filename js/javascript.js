@@ -27,6 +27,9 @@ if (document.getElementById('pass').value =="") {
 if (document.getElementById('pass').value <=4) {
 	errormessager+="Enter atleast 5 \n";
 }
+if (document.getElementById('Cpass').value =="") {
+	errormessager+="Enter Confirm passwork \n";
+}
 if (document.getElementById('pass').value !=document.getElementById('Cpass').value) {
 	errormessager+="atleast havethe same password \n";
 }
